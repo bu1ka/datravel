@@ -1,2 +1,4 @@
 .idea
 js/vendor
+node_modules/
+build/

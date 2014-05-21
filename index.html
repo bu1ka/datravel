@@ -1,62 +1,53 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>X-PLOSION</title>
-    <style type="text/css">
-        .thumb {
-            list-style: none;
-            float: left;
-        }
-        .thumb img {
-            width: 250px;
-            height: 200px;
-            border: 1px solid #000;
-        }
-        #big-photo img {
-            width: 800px;
-            height: 600px;
-            border: 1px solid #000;
-        }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X-PLOSION</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="build/css/main.css"/>
+</head>
+<body>
 
-    </style>
-    </head>
-    <body>
+<script type="text/javascript">
+    var images = [
+        {'imageUrl': 'http://adriannejames.com/wp-content/uploads/2013/09/Redhead-Girl-Laugh-Nice-Funny-Humor1.jpg'},
+        {'imageUrl': 'http://blog.pokerjunkie.com/wp-content/uploads/2009/12/Redhead.jpg'},
+        {'imageUrl': 'http://www.elkevonfreudenberg.com/blog/wp-content/uploads/2013/02/Beautiful-redhead-women-photography071.jpg'},
+        {'imageUrl': 'http://1.bp.blogspot.com/-tdJCqEMFdlY/Tp0faQvtwXI/AAAAAAAAGgM/UMpzgkfOW50/s1600/img-redhead_in_glasses.jpg'},
+        {'imageUrl': 'http://images.tvrage.com/news/20-favorite-tv-redheads9.jpg'}
 
-    <script type="text/javascript">
-        var images = [
-            {'imageUrl': 'http://adriannejames.com/wp-content/uploads/2013/09/Redhead-Girl-Laugh-Nice-Funny-Humor1.jpg'},
-            {'imageUrl': 'http://blog.pokerjunkie.com/wp-content/uploads/2009/12/Redhead.jpg'},
-            {'imageUrl': 'http://www.elkevonfreudenberg.com/blog/wp-content/uploads/2013/02/Beautiful-redhead-women-photography071.jpg'},
-            {'imageUrl': 'http://1.bp.blogspot.com/-tdJCqEMFdlY/Tp0faQvtwXI/AAAAAAAAGgM/UMpzgkfOW50/s1600/img-redhead_in_glasses.jpg'},
-            {'imageUrl': 'http://images.tvrage.com/news/20-favorite-tv-redheads9.jpg'}
-
-        ];
-    </script>
-
+    ];
+</script>
+<div class="wrap">
     <header class="header">
         <hgroup class="header-group">
             <h2 class="header-text">X-Plosion</h2>
-            <h3 class="header-subtext">Lorem ipsum dolor sit amet</h3>
+
+            <h3 class="header-subtext">Lorem ipsum dolor</h3>
         </hgroup>
 
-        <img class="header-logo" src="" alt=""/>
+        <div class="header-logo">
+            <div class="header-logo-wrap">
+                <span class="header-logo_firstline">x-plosion</span>
+                <span class="header-logo_secondline">soda for superheroes</span>
+            </div>
+        </div>
 
-        <form class="search" action="">
-            <input type="search" name="search" placeholder="Search X-Plosion"/>
-            <input type="submit" value="search"/>
+        <form class="search-field" action="">
+            <input type="search" class="form-input search-input" name="search" placeholder="Search X-Plosion"/>
+            <input type="submit" class="form-btn search-submit" value="search"/>
         </form>
 
     </header>
 
     <nav class="main-nav">
         <ul class="nav-list">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Our products</li>
-            <li class="nav-item">About Us</li>
-            <li class="nav-item">Where to buy</li>
-            <li class="nav-item">Contact Us</li>
+            <li class="nav-item nav-item_active"><a href="#" class="nav-item-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-item-link">Our products</a></li>
+            <li class="nav-item"><a href="#" class="nav-item-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-item-link">Where to buy</a></li>
+            <li class="nav-item"><a href="#" class="nav-item-link">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -84,24 +75,21 @@
     </aside>
 
 
-
-
-        <div id="gallery">
-            <div id="big-photo">
-
-            </div>
-
-            <ul id="thumbs">
-
-            </ul>
-            <div id="controls">
-                <button data-ctrl="prev">prev</button>
-                <button data-ctrl="next">next</button>
-            </div>
+    <div id="gallery">
+        <div id="big-photo">
 
         </div>
 
+        <ul id="thumbs">
 
-        <script data-main="js/main.js" src="js/vendor/requirejs/require.js"></script>
-    </body>
+        </ul>
+        <div id="controls">
+            <button data-ctrl="prev">prev</button>
+            <button data-ctrl="next">next</button>
+        </div>
+
+    </div>
+</div>
+<script data-main="js/main.js" src="js/vendor/requirejs/require.js"></script>
+</body>
 </html>
