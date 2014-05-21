@@ -1,0 +1,17 @@
+{
+  "name": "datravel",
+  "version": "0.0.0",
+  "description": "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "requirejs": "~2.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
