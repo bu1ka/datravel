@@ -8,7 +8,6 @@ define(['backbone', '../views/thumbView'], function(Backbone, ThumbView) {
                 this.$el.append( new ThumbView({model: photo}).render().el);
             }, this);
 
-
         }
 
     });

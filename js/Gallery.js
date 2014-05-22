@@ -28,10 +28,12 @@ define('Gallery', [
         replace: function(model) {
             this.bigPicture.replace(model);
         },
-        selectPrev: function() {
+        selectPrev: function(e) {
+            e.preventDefault();
             this.photos.selectPrev();
         },
-        selectNext: function() {
+        selectNext: function(e) {
+            e.preventDefault();
             this.photos.selectNext();
         }
     });

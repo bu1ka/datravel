@@ -4,10 +4,10 @@ module.exports = function(grunt) {
         requirejs: {
             compile: {
                 options: {
-                    baseUrl: "./",
+                    baseUrl: "./js",
                     mainConfigFile: "js/main.js",
-                    name: "js/main",
-                    out: "js/build.js"
+                    name: "main",
+                    out: "build/js/main.js"
                 }
             }
         },
@@ -19,19 +19,23 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            css: {
+            less: {
                 files: '**/*.less',
                 tasks: ['less']
+            },
+            livereload: {
+                options: { livereload: true },
+                files: ['build/**/*']
             }
         }
     });
 
-    //grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     grunt.loadNpmTasks('grunt-contrib-less');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['less']);
+    grunt.registerTask('default', ['less', 'requirejs']);
 
 };

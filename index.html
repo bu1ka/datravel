@@ -5,21 +5,20 @@
     <title>X-PLOSION</title>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="build/css/main.css"/>
+    <!--<script src="http://localhost:35729/livereload.js"></script>-->
 </head>
 <body>
 
 <script type="text/javascript">
     var images = [
-        {'imageUrl': 'http://adriannejames.com/wp-content/uploads/2013/09/Redhead-Girl-Laugh-Nice-Funny-Humor1.jpg'},
-        {'imageUrl': 'http://blog.pokerjunkie.com/wp-content/uploads/2009/12/Redhead.jpg'},
-        {'imageUrl': 'http://www.elkevonfreudenberg.com/blog/wp-content/uploads/2013/02/Beautiful-redhead-women-photography071.jpg'},
-        {'imageUrl': 'http://1.bp.blogspot.com/-tdJCqEMFdlY/Tp0faQvtwXI/AAAAAAAAGgM/UMpzgkfOW50/s1600/img-redhead_in_glasses.jpg'},
-        {'imageUrl': 'http://images.tvrage.com/news/20-favorite-tv-redheads9.jpg'}
-
+        {'imageUrl': 'img/illustration.png'},
+        {'imageUrl': 'img/1.jpg'},
+        {'imageUrl': 'img/2.jpg'},
+        {'imageUrl': 'img/3.jpg'}
     ];
 </script>
 <div class="wrap">
-    <header class="header">
+    <header class="header clearfix">
         <hgroup class="header-group">
             <h2 class="header-text">X-Plosion</h2>
 
@@ -41,8 +40,8 @@
     </header>
 
     <nav class="main-nav">
-        <ul class="nav-list">
-            <li class="nav-item nav-item_active"><a href="#" class="nav-item-link">Home</a></li>
+        <ul class="nav-list clearfix">
+            <li class="nav-item"><a href="#" class="nav-item-link nav-item-link_active">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
             <li class="nav-item"><a href="#" class="nav-item-link">Our products</a></li>
             <li class="nav-item"><a href="#" class="nav-item-link">About Us</a></li>
@@ -52,44 +51,78 @@
     </nav>
 
     <article class="main-content">
+        <header class="main-content-header">
+            <h1 class="main-content-header-main-text">X-plosion</h1>
 
+            <h2 class="main-content-header-sub-text">soda for superheroes!</h2>
+        </header>
+
+        <p class="main-content_annotation">
+            Try a healthy alternative to the current artificial drinks &mdash;
+            your mind, body and tongue will thank you!
+        </p>
+
+        <p class="main-content_text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. There are many variations of passages
+            of Lorem Ipsum available, but the majority have suffered.
+        </p>
+
+        <figure class="gallery-big-photo" id="big-photo">
+            <img src="img/illustration.png" alt="soda for superheroes!"/>
+        </figure>
+
+        <div id="gallery" class="gallery">
+            <ul id="thumbs" class="gallery-thumbs clearfix"></ul>
+            <div id="controls" class="gallery-ctrls">
+                <button data-ctrl="prev" class="gallery-ctrl gallery-ctrl_prev"><</button>
+                <button data-ctrl="next" class="gallery-ctrl gallery-ctrl_next">></button>
+            </div>
+        </div>
 
     </article>
 
     <aside class="sidebar">
         <section class="sidebar-item sidebar-item_follow-us">
-            <header>
+            <header class="sidebar-item-header">
                 follow us
             </header>
-
+            <ul class="sidebar-item-content">
+                <li class="icon icon_fb">Facebook</li>
+                <li class="icon icon-tw">Twitter</li>
+                <li class="icon icon-gplus">Google+</li>
+            </ul>
         </section>
 
         <section class="sidebar-item sidebar-item_random">
-
+            <header class="sidebar-item-header">
+                Randomly selected
+            </header>
+            <ul class="sidebar-item-content">
+                <li class="icon icon-arrow"><a href="#">X-Plosion is a hit in Japan</a></li>
+                <li class="icon icon-arrow"><a href="#">3 new flavors added</a></li>
+                <li class="icon icon-arrow"><a href="#">Check our new promo at Youtube</a></li>
+                <li class="icon icon-arrow"><a href="#">We say NO to artificial flavours</a></li>
+                <li class="icon icon-arrow"><a href="#">X-Plosion and your health</a></li>
+            </ul>
         </section>
 
         <section class="sidebar-item sidebar-item_find-us">
-
+            <header class="sidebar-item-header">
+                Where you can find us
+            </header>
+            <ul class="sidebar-item-content">
+                <li><b>X-Plosion Ltd</b></li>
+                <li>9 Danbury Road</li>
+                <li>Wilton</li>
+                <li>CT 06897</li>
+            </ul>
         </section>
-
     </aside>
 
-
-    <div id="gallery">
-        <div id="big-photo">
-
-        </div>
-
-        <ul id="thumbs">
-
-        </ul>
-        <div id="controls">
-            <button data-ctrl="prev">prev</button>
-            <button data-ctrl="next">next</button>
-        </div>
-
-    </div>
 </div>
-<script data-main="js/main.js" src="js/vendor/requirejs/require.js"></script>
+<script data-main="build/js/main.js" src="js/vendor/requirejs/require.js"></script>
 </body>
 </html>
